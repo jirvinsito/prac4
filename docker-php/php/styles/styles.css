@@ -1,0 +1,84 @@
+/* General body styles */
+body {
+    font-family: 'Roboto', sans-serif;
+    background: linear-gradient(135deg, #f8f9fa, #e9ecef); /* Suave degradado de fondo */
+    margin: 0;
+    padding: 0;
+}
+
+/* Card container */
+.card {
+    border: none;
+    border-radius: 15px;
+    background-color: #ffffff; /* Blanco puro para la tarjeta */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1); /* Sombra suave */
+}
+
+/* Form styles */
+form {
+    width: 100%;
+}
+
+/* Input fields */
+input.form-control {
+    font-size: 16px;
+    padding: 12px;
+    border: 1px solid #ced4da; /* Borde gris claro */
+    border-radius: 5px;
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+input.form-control:focus {
+    border-color: #007bff; /* Azul en foco */
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+/* Labels for fields */
+label.form-label {
+    top: -14px;
+    left: 12px;
+    background-color: #ffffff;
+    padding: 0 5px;
+    font-size: 14px;
+    color: #6c757d;
+}
+
+/* Submit button */
+button.btn-primary {
+    background-color: #007bff; /* Azul primario */
+    border: none;
+    padding: 12px;
+    font-size: 16px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    width: 100%;
+}
+
+button.btn-primary:hover {
+    background-color: #0056b3; /* Azul más oscuro al pasar el ratón */
+}
+
+/* Links */
+.text-center a {
+    color: #007bff;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.text-center a:hover {
+    color: #0056b3;
+    text-decoration: underline;
+}
+
+/* Alert styles overrides for better visibility */
+.alert {
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 576px) {
+    .card {
+        padding: 20px;
+    }
+}
